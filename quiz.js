@@ -1,14 +1,16 @@
 const arkFood = function (jumlahMakanan, hargaSatuan) {
-  let potongan;
+  
   let diskon = 0.35;
   // let maksPotongan = 50000
+  
 
   let minPembelian = 60000;
   let totalHarga = hargaSatuan * jumlahMakanan;
+  let potongan = diskon * totalHarga
   let subtotal = totalHarga - potongan;
-  console.log(totalHarga);
-  console.log(potongan);
-  console.log(subtotal);
+  console.log(" total harga = " + totalHarga);
+  console.log("potongan " + potongan);
+  console.log("sub total " + subtotal);
 
   if (totalHarga >= 60000) {
     return (potongan = diskon * totalHarga);
